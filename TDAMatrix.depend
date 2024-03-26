@@ -1,13 +1,19 @@
 # depslib dependency file v1.0
-1711107261 source:c:\users\lucas\onedrive\escritorio\facultad\proyectos c\alg y estruc datos\tdamatrix\main.c
+1711488009 source:c:\users\lucas\onedrive\escritorio\facultad\proyectos c\alg y estruc datos\tdamatrix\main.c
 	<stdio.h>
 	<stdlib.h>
 	"prototipos.h"
 
-1711192674 c:\users\lucas\onedrive\escritorio\facultad\proyectos c\alg y estruc datos\tdamatrix\prototipos.h
+1711488419 c:\users\lucas\onedrive\escritorio\facultad\proyectos c\alg y estruc datos\tdamatrix\prototipos.h
 
-1711192182 source:c:\users\lucas\onedrive\escritorio\facultad\proyectos c\alg y estruc datos\tdamatrix\funciones.c
+1711488477 source:c:\users\lucas\onedrive\escritorio\facultad\proyectos c\alg y estruc datos\tdamatrix\funciones.c
 	<stdio.h>
 	<stdlib.h>
+	"prototipos.h"
+
+1711484730 source:c:\users\lucas\onedrive\escritorio\facultad\proyectos c\alg y estruc datos\tdamatrix\funcionesvector.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
 	"prototipos.h"
 

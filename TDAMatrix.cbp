@@ -34,6 +34,9 @@
 		<Unit filename="funciones.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="funcionesVector.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

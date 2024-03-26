@@ -5,8 +5,7 @@
 
 typedef struct{
    MATRIX_ELEMENT* arreglo;
-   int rows;
-   int columns;
+   int rows, columns, AmountOfElements;
 } matrix;
 
 typedef struct{
@@ -16,12 +15,13 @@ typedef struct{
 
 matrix* crearMatriz(int,int);
 void eliminarMatriz(matrix*);
-int getMatrizRows(matrix*);
-int getMatrizColumns(matrix*);
+int getMatrixRows(matrix*);
+int getMatrixColumns(matrix*);
+int getAmountOfElements(matrix *matrix);
 MATRIX_ELEMENT getValueIn(matrix*,int,int);
-void setValueInMatrix(matrix*,int,int,MATRIX_ELEMENT);
-void imprimirMatriz(matrix*,void prt(void*));
-int matrixLlena(matrix*);
+void setValueInMatrix(matrix*,MATRIX_ELEMENT);
+void imprimirMatriz(matrix*);
+int matrixFull(matrix*);
 
 void reemplazarFila(matrix*, Vector*, int fila);
 void reemplazarColumna(matrix*, Vector*, int columna);
@@ -29,8 +29,24 @@ void reemplazarColumna(matrix*, Vector*, int columna);
 matrix* sumarDosMatrices(matrix*, matrix*);
 MATRIX_ELEMENT sumarDosElementos(MATRIX_ELEMENT, MATRIX_ELEMENT);
 void multiplicarDosMatrices(matrix*, matrix*);
-void sumarVectorAFilasMatriz(matrix*, Vector*);
+void sumarVectorAFilaMatriz(matrix*, Vector*, int);
 void calcularDeterminante(matrix*);
 Vector* resolverSistemaEcuaciones(matrix*);
+
+Vector* crearVector(int);
+int getCurrentSize(Vector*);
+int getMaxSize(Vector*);
+VECTOR_ELEMENT getValueInVector(Vector*,int);
+int agregarAlVector(Vector*,VECTOR_ELEMENT);
+int vectorLleno(Vector*);
+int eliminarDelVector(Vector*,VECTOR_ELEMENT);
+int borrarDato(Vector*,int);
+void eliminarVector(Vector*);
+int sequential_search(int,VECTOR_ELEMENT*,int);
+int binary_search(int,Vector*);
+void ordenarVector(Vector*);
+int criterioComparacion(VECTOR_ELEMENT,VECTOR_ELEMENT);
+void bubble_sort(VECTOR_ELEMENT*,int,int);
+void swap(VECTOR_ELEMENT*,VECTOR_ELEMENT*);
 
 #endif // PROTOTIPOS_H_INCLUDED
